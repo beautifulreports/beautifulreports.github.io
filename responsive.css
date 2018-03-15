@@ -1,0 +1,76 @@
+@media screen and (max-width:1260px){
+
+    .wrapper{
+        margin: 0 auto;
+        padding: 4rem;
+        max-width: 65rem;
+    }
+    
+    .wrapper h1{
+        font-size: 3rem;
+        line-height: 3.25rem;
+        width:100%;
+    }
+    
+    .wrapper h2{
+        font-size: 1.75rem;
+        line-height: 2.5rem;
+    }
+    
+    .wrapper p, .wrapper li{
+        font-size: .875rem;
+        line-height: 1.75rem;
+    }
+    
+    .dropped-header{
+        height:35rem;
+        transition: .25s ease-in;
+        object-fit: cover;
+        position: absolute;
+        margin: 0;
+    }
+
+    img{
+        margin: 1.5rem 0;
+    }
+    
+    .figcaption{
+        font-size:.75rem;
+    }
+}
+
+
+
+@media screen and (min-width:1260px){
+    
+    nav{
+        position: fixed;
+        top:0;
+        left:0;
+        border-right: none;
+    }
+        
+    .wrapper{
+        padding-left: 24rem;
+    }
+    
+    footer .wrapper{
+        padding-left: 24rem;
+    }
+    
+    .close-icon{
+        visibility: hidden;
+    }
+    
+    .figcaption{
+        margin-top: .25rem;
+    }
+    
+    .column{
+    column-count: 2;
+    column-gap: 1.5rem;
+    column-width: 24rem;
+    padding: 1.5rem 0;
+}
+
+}

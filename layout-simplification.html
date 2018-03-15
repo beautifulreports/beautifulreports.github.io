@@ -1,0 +1,262 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Beautiful Reports</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en" />
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+        <meta name="product" content="'SAS Visual Analytics'" />
+        <meta name="description" content="Focus Area for Report Design Best Practices that provide our users with technical information." />
+        <meta name="keywords" content="Report Design Best Practices, documentation, examples" />
+        <meta name="owner" content="R&D" />
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" a href="reports.css"/>
+        <link rel="stylesheet" type="text/css" a href="responsive.css"/>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Raleway:200,400,600" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <nav id="sidenav">
+                <a class="close-icon" onclick="closeNav()">&times;</a>
+
+                    <a id="home" href="index.html">Beautiful Reports</a>
+                
+                    <button class="accordion">preparation</button>
+                        <div class="submenu">
+                            <ul>
+                            <li><a>your audience</a></li>
+                            <li><a>your message</a></li>
+                            <li><a>first draft</a></li>
+                            </ul>
+                        </div>  
+                
+                    <button class="accordion">data</button>
+                        <div class="submenu">
+                            <ul>
+                            <li><a>understand your data</a></li>
+                            <li><a>enhance your data</a></li>
+                            <li><a>the right visualization</a></li>
+                            <li><a>general considerations</a></li>
+                            </ul>
+                        </div>
+                
+                    <button class="accordion">tools</button>
+                        <div class="submenu">
+                            <ul>
+                            <li><a>display rules</a></li>
+                            <li><a href="filters.html">filters<b> NEW!</b></a></li>
+                            <li><a>interactions</a></li>
+                            <li><a>containers</a></li>
+                            <li><a>custom data items</a></li>
+                            <li><a>report &amp; page linking</a></li>
+                            </ul>
+                        </div>
+                    
+                    <button class="accordion">communication</button>
+                        <div class="submenu">
+                            <ul>
+                            <li><a href="report-level_text.html">report-level text</a><b> NEW!</b></li>
+                            <li><a href="object-level_text.html">object-level text<b> NEW!</b></a></li>
+                            <li><a>label consistency</a></li>
+                            </ul>
+                        </div>
+                
+                    <button class="accordion">layout</button>
+                        <div class="expanded">
+                            <ul>
+                            <li><a>focal point</a></li>
+                            <li><a href="add_white_space.html">add whitespace<b> NEW!</b></a></li>
+                            <li><a>attention &amp; balance</a></li>
+                            <li><a>proximity &amp; alignment</a></li>
+                            <li><a>consistency</a></li>
+                            <li class="selected"><a href="layout-simplification.html">layout simplification<b> NEW!</b></a></li>
+                            </ul>
+                        </div>
+                
+                    <button class="accordion">style</button>
+                        <div class="submenu">
+                            <ul>
+                            <li><a>images</a></li>
+                            <li><a>color harmony</a></li>
+                            <li><a>color meaning</a></li>
+                            <li><a>branding</a></li>
+                            <li><a>typography</a></li>
+                            <li><a>style simplification</a></li>
+                            </ul>
+                        </div>
+            </nav>
+
+            <button class="menu-icon" onclick="openNav()">&#9776;</button>
+
+        </header>
+
+        <div class="wrapper">
+            
+            <h1>Limit the Number of Pages in a Report</h1>
+
+            <section class="column">
+                <h3>Aim for one to seven pages per report.</h3>
+                <p>The number of pages in your report can influence your audience's perception of the report before viewing it.</p>
+                <ul>
+                    <li>A smaller number of pages can indicate a quick and easy-to-understand report.</li>
+                    <li>A larger number of pages can indicate a complex report that requires several study sessions.</li>
+                </ul>
+                <img class="illustration" src="images/Limit_Pages_1@3x.png" alt="Less pages equal easier to read">
+            </section>
+
+            <section class="column">
+                <p>The fewer pages in a report, the easier it is for your audience to
+                remember content on each of the pages.</p>
+                <p>If your data story needs more than six or seven pages to tell in its entirety, create multiple reports that each has a few pages. Then, link the primary report to secondary reports, as needed, for
+                additional details.</p>
+                <img  class="illustration"src="images/Limit_Pages_2@3x.png" alt="Less pages equals an organized report">
+            </section>
+
+            <section>
+                <p>For example, a report about sales and marketing can have pages about the marketing effort and its effect on sales. The primary report links to two secondary reports: one report with information for the sales audience and another report with information for the marketing team. You can use this same technique to link from a high-level report to target reports with detailed content.</p>
+            </section>
+
+            <section>	
+                <img class="illustration" src="images/Limit_Pages_3@3x.png" alt="Each page should stand on its own">
+                <div class="figcaption">Each page in a report should stand on its own.</div>
+            </section>
+
+            <section>
+                <p>Spreading data across multiple pages in a report - when that data should be kept together - can undercut data comprehension. Focus each page on communicating one point or answering a single question that advances your audience along in your data story.</p>
+                <p>Be aware that, as your audience members read through the report, their memory and interpretative skills can be overwhelmed. Do not require your audience to remember content from one page to the next. Help them understand what they are viewing by providing titles.</p>
+            </section>
+
+            <section class="column">
+                <img class="illustration" src="images/Limit_Pages_4@3x.png" alt="Titles establish page hierarchy"><div class="figcaption">Titles aid comprehension and provide visual hierarchy.</div>
+                <img class="illustration" src="images/Limit_Pages_5@3x.png" alt="Each page should concentrate on a single idea."><div class="figcaption">Each page should concentrate on a single idea.</div>
+            </section>
+
+            <section class="column">
+                <h3>Mobile in Mind</h3>
+                <p>Reports with fewer pages are faster to download on mobile networks, and they open faster, too. Report linking can filter the data shown in the secondary report. The audience members download only the target reports applicable to them. This saves time and device storage.</p>
+                <img class="illustration" src="images/Limit_Pages_6@3x.png" alt="Smaller reports are easier to load on mobile">
+            </section>  
+        </div>
+        
+        <div class="wrapper">
+    
+            <h1>Limit the Number of Objects on a Page</h1>
+
+            <section class="column">
+                <h3>Aim for two to six objects per page.</h3>
+                <p>Limiting the number of objects on a page can improve your audience's ability to focus on your data, as well as improve your audience's comprehension of your data.</p>
+                <p>The more objects that are on a page, the less relevant they seem. By limiting the number of objects and increasing the white space around them, you enhance the visibility of your data.</p>    
+                <img class="illustration" src="images/Limit_Objects_1@3x.png" alt="Limit objects on each page">
+            </section>
+
+            <section>
+                <p>Typically, users do not want to see all possible report objects at one time. Instead, users prefer to see only the few report objects that support the specific and concrete questions they are investigating.</p>
+            </section>
+
+            <section class="block">
+                <h3>How do you choose which report objects to show?</h3>
+                <ul>
+                    <li>Identify the story you want to tell by determining the specific and concrete questions of your audience.</li>
+                    <li>Design the page using the highest priority report objects that answer your audience's questions.</li>
+                </ul>
+            </section>
+
+            <section>
+                <img class="illustration" src="images/Limit_Objects_2@3x.png" alt= "Consider using a stacking container to handle multiple objects">
+            </section>
+
+            <section>
+                <p>One way to manage the density of a page is to use a stacking container. A stacking container has the following features:</p>
+                <ul>
+                    <li>Allows your audience to view one object at a time.</li>
+                    <li>Provides flexibility for users to quickly access other objects on that page.</li>
+                </ul>
+            </section>
+
+            <section class="column">
+                <h3>Improve your audience's comprehension of your data.</h3>
+                <p>The larger the graph or chart, the more time your audience spends studying it. Your audience will merely glance at relatively smaller graphs and charts.</p>
+                <p>When a graph or chart is meant for a specific task that requires much detail, make that graph or chart larger to enable your audience to easily study and comprehend the details and data.</p>
+                <img class="illustration" src="images/Limit_Objects_3@3x.png" alt="Focal points help create hierarchy">
+
+            </section>
+
+            <section class="column">
+                    <p>Avoid the temptation to reduce the size of objects and pile several on a page. Doing so causes the objects and their data to be illegible.</p>
+                    <p>Instead, carefully identify the objects that are important to compare with each other, and locate those objects on the same page. Relocate the remaining objects to another page or to another report.</p>
+                <img class="illustration" src="images/Limit_Objects_4@3x.png" alt="Focal points also minimize distraction">
+            </section>
+
+            <section>
+                <h3>Mobile in mind</h3>
+                <p>Reducing the visual complexity of each page means it is more likely the content will fit on a tablet without the need to scroll. Limiting content to one screen eases interactions such as filtering between objects and visual comparison between objects on the page.</p>
+                <p>The report layout (not the data) is described in XML. The more report objects, the larger the XML. The larger XML, the more time it takes to open and render the layout of the report.</p>
+            </section>
+        </div>
+
+
+        <footer>
+            <div class="wrapper">
+
+                <h2>Learn More</h2>
+
+               <section>
+                   <p><strong>Want to dig deeper?</strong> The recommendations in this section are based on the following resources as well the experience of SAS consultants and employees.</p>
+                </section>
+
+                <ol>
+                    <li id="fn1">
+                        <p>Baldonado, M.Q.W., A. Woodruff, and A. Kuchinsky. <a href="http://dl.acm.org/citation.cfm?id=345271">"Guidelines for using multiple views in information visualization."</a> Proceedings of the International Working Conference on Advanced Visual Interfaces (AVI 2000). New York, NY: ACM.
+                    </li>
+
+                    <li id="fn2">
+                        <p>Coyle, C. L., M. Malek, C. Mayse, V. Patil, and S. Shell. "Data Can Be Beautiful: Crafting a Compelling Story with SAS Visual Analytics." Proceedings of the SAS Global Forum 2017 Conference. Cary, NC: SAS Institute Inc.</p>
+                    </li>
+
+                    <li id="fn3">
+                        <p>Few, S. Information Dashboard Design: Displaying data for at-a-glance monitoring. 2nd ed. Burlingame, CA: Analytics Press, 2013.</p>
+                    </li>
+                    
+                    <li id="fn4">
+                        <p>Froese, M.-E., and Tory, M. "Lessons Learned from Designing Visualization Dashboards." March 4, 2016. IEEE Computer Graphics and Applications. Available for purchase from IEEE.</p>
+                    </li>
+
+                    <li id="fn5">
+                        <p>Mandavilli, L., and A. Chitale. <a href="http://support.sas.com/resources/papers/proceedings16/SAS3802-2016.pdf">"Carry-on Suitcases and Mobile Devices: Using SAS Visual Analytics Designer for Creating Optimally Designed Reports for SAS Mobile BI."</a>Proceedings of the SAS Global Forum 2016 Conference. Cary, NC: SAS Institute Inc.</p>
+                    </li>
+
+                    <li id="fn6">
+                        <p>Mobley, K. L., R. Hogan, and P. Phadke. <a href="http://support.sas.com/resources/papers/proceedings16/SAS4080-2016.pdf">"Designing SAS Visual Analytics Reports: Write Once, View Anywhere."</a>Proceedings of the SAS Global Forum 2016 Conference. Cary, NC: SAS Institute Inc.</p>
+                    </li>
+                    
+                    <li id="fn7">
+                        <p>Orlov, P., T. Ermolova, V. Laptev, A. Mitrofanov, and V. Ivanov. "The Eye-tracking Study of the Line Charts in Dashboards Design." Proceedings of the 11th Joint Conference on Computer Vision, Imaging and Computer Graphics Theory and Applications. Volume 2. VISIGRAPP 2016.</p>
+                    </li>
+
+                    <li id="fn8">
+                        <p>Snavely, E. "Nine Best Practices for Big Data Dashboards Using SAS Visual Analytics." Proceedings of the SAS Global Forum 2017 Conference. Cary, NC: SAS Institute Inc.</p>
+                    </li>
+
+                    <li id="fn9">
+                        <p>Sookne, J., E. Summers, J. Langston, and K. Mobley. <a href="http://support.sas.com/resources/papers/proceedings16/SAS6321-2016.pdf">"If You Build It, Will They Understand? Designing Reports for the General Public in SAS Visual Analytics.”</a>Proceedings of the SAS Global Forum 2016 Conference. Cary, NC: SAS Institute Inc.</p>
+                    </li>
+                    
+                    <li id="fn10">
+                        <p>Strelchenko, K. 2014. "10 Responsive Design Problems and Fixes." UX Magazine.</p>
+                    </li>
+                </ol>
+            </div>
+            <div class="snackbar">
+                <p>We’re still growing our site.<a href="mailto:Rajiv.Ramarajan@sas.com?Subject=Beautiful Reports Feedback&cc=mark.malek@sas.com;cheryl.coyle@sas.com"> Tell us what you think!</a></p>
+            </div>
+        </footer>    
+
+        <script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="site-js.js" type="text/javascript" charset="utf-8">
+        </script>
+
+    </body>
+    
+</html>

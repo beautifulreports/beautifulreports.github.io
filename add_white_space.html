@@ -1,0 +1,227 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Beautiful Reports</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en" />
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+        <meta name="product" content="'SAS Visual Analytics'" />
+        <meta name="description" content="Focus Area for Report Design Best Practices that provide our users with technical information." />
+        <meta name="keywords" content="Report Design Best Practices, documentation, examples" />
+        <meta name="owner" content="R&D" />
+        <link rel="stylesheet" type="text/css" a href="reports.css"/>
+        <link rel="stylesheet" type="text/css" a href="responsive.css"/>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Raleway:200,400,600" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <nav id="sidenav">
+                <a class="close-icon" onclick="closeNav()">&times;</a>
+
+                    <a id="home" href="index.html">Beautiful Reports</a>
+                
+                    <button class="accordion">preparation</button>
+                        <div class="submenu">
+                            <ul>
+                            <li><a>your audience</a></li>
+                            <li><a>your message</a></li>
+                            <li><a>first draft</a></li>
+                            </ul>
+                        </div>  
+                
+                    <button class="accordion">data</button>
+                        <div class="submenu">
+                            <ul>
+                            <li><a>understand your data</a></li>
+                            <li><a>enhance your data</a></li>
+                            <li><a>the right visualization</a></li>
+                            <li><a>general considerations</a></li>
+                            </ul>
+                        </div>
+                
+                    <button class="accordion">tools</button>
+                        <div class="submenu">
+                            <ul>
+                            <li><a>display rules</a></li>
+                            <li><a href="filters.html">filters<b> NEW!</b></a></li>
+                            <li><a>interactions</a></li>
+                            <li><a>containers</a></li>
+                            <li><a>custom data items</a></li>
+                            <li><a>report &amp; page linking</a></li>
+                            </ul>
+                        </div>
+                    
+                    <button class="accordion">communication</button>
+                        <div class="submenu">
+                            <ul>
+                            <li><a href="report-level_text.html">report-level text<b> NEW!</b></a></li>
+                            <li><a href="object-level_text.html">object-level text<b> NEW!</b></a></li>
+                            <li><a>label consistency</a></li>
+                            </ul>
+                        </div>
+                
+                    <button class="accordion">layout</button>
+                        <div class="expanded">
+                            <ul>
+                            <li><a>focal point</a></li>
+                            <li class="selected"><a href="add_white_space.html">add whitespace<b> NEW!</b></a></li>
+                            <li><a>attention &amp; balance</a></li>
+                            <li><a>proximity &amp; alignment</a></li>
+                            <li><a>consistency</a></li>
+                            <li><a href="layout-simplification.html">layout simplification<b> NEW!</b></a></li>
+                            </ul>
+                        </div>
+                
+                    <button class="accordion">style</button>
+                        <div class="submenu">
+                            <ul>
+                            <li><a>images</a></li>
+                            <li><a>color harmony</a></li>
+                            <li><a>color meaning</a></li>
+                            <li><a>branding</a></li>
+                            <li><a>typography</a></li>
+                            <li><a>style simplification</a></li>
+                            </ul>
+                        </div>
+            </nav>
+            
+            <button class="menu-icon" onclick="openNav()">&#9776;</button>
+            
+        </header>
+        
+        <div class="wrapper">
+
+            <h1>Adding Whitespace to your Report</h1>
+            
+            <section class="column">
+                <h3>What Is White Space?</h3>
+                <p>White space refers to the areas in your report that do not contain content.</p>
+                <p>For example, the spaces between the visual elements in a report are considered white space, even if the background color is not white. White space is also referred to as negative space.</p>
+                <img class="illustration" src="images/Whitespace_1@3x.png">
+            </section>
+            
+            <section>
+                <h3>Why Use White Space?</h3>
+                <ul>
+                    <li>White space establishes a visual framework that enables the viewer to easily understand the content and organization of the report.</li>
+                    <li>Closely spaced content requires additional time and effort from the viewer to parse.</li>
+                    <li>A report that is free of clutter and has ample white space is more visually appealing and elegant.</li>
+                </ul>
+            </section>
+        
+            <section class="column">
+                <img src="images/Whitespace_Report_1@3x.png" alt="A report without enough white space">
+                <div class="figcaption">A report without enough white space</div>
+                <img src="images/Whitespace_Report_2@3x.png" alt="A report with ample white space">
+                <div class="figcaption">A report with ample white space</div>    
+            </section>
+            
+            <section>
+                <p>Many report designers attempt to fill every pixel of the page with content and decoration. Don't view empty space as wasted space. White space plays an essential role in your visual design.</p>
+            </section>
+            
+            <section class="column">
+                <h3>White Space Provides Visual Organization</h3>
+                <p>The white space in your report creates a visual grid that organizes your content. The alignment of visuals on the grid helps to connect and separate content. For example, report objects that are side by side in the same row are intuitively understood to be related.Avoid placing borders around your content. White space can separate your visual elements without creating clutter.</p>
+                <img class="illustration" src="images/Whitespace_2@3x.png">
+            </section>
+            
+            <section>
+                <img src="images/Whitespace_5@3x.png">
+            </section>
+            
+            <section class="column">
+                <h3>Margins and Padding</h3>
+                <p>As a design principle, it is recommended that you include generous margins and padding around your pages and report objects. In SAS Visual Analytics 8.1 and later, the Padding option enables you to specify the padding around each report object. To achieve a balanced design, ensure that the padding is consistent for each element on a report page. By using precision layout, you can adjust your margins and padding. However, be aware that precision layouts do not adjust well to smaller screens and are often unusable on mobile devices.</p>
+                <img class="illustration" src="images/Whitespace_3@3x.png">
+            </section>
+            
+            <section>
+                <h3>Create a Focal Point</h3>
+                <p>The focal point is the object that grabs the viewers' attention. It provides a starting point for viewers as they take in the content of the page.</p>
+                <p>To establish an object as the focal point, position it at either the top of the page or the left side (or the right side if your audience reads from right to left). The focal point object should be the largest object on the page, often filling more than 50% of the page width or height.</p>
+            </section>
+            
+            <section class="column">
+                <img src="images/Whitespace_Report_3@3x.png" alt="A report without a clear focal point"><div class="figcaption">A report without a clear focal point</div>
+                <img src="images/Whitespace_Report_4@3x.png" alt="A report with a strong focal point"><div class="figcaption">A report with a strong focal point</div>
+            </section>
+            
+            <section class="column">
+                <p>For each page in your report, if there is an object that drives interactions, then that object should be the focal point.</p>
+                <p>Avoid having multiple elements that compete for the viewers' focus. Omit any unneeded images from the report.</p>
+                <img class="illustration" src="images/Whitespace_4@3x.png">
+            </section>
+            
+        </div>        
+
+            
+
+        <footer>
+            <section class="wrapper">
+                
+                <h2>Learn More</h2>
+
+                <section>
+                   <p><strong>Want to dig deeper?</strong> The recommendations in this section are based on the following resources as well the experience of SAS consultants and employees.</p>
+                </section>
+
+                <ol>
+                    <li id="fn1">
+                        <p>Bera, P. "Do Distracting Dashboards Matter? Evidence from an Eye Tracking Study" (lecture, 7th SIGSAND/PLAIS EuroSymposium, Gdańsk, Poland, September 25, 2014.</p>
+                    </li>	
+                    <li id="fn2">
+                        <p>Bremser, W. G., and W. P. Wagner. "Developing Dashboards for Performance Management." The CPA Journal 83, no 7 (July 2013).</p>
+                    </li>
+                    <li id="fn3">
+                        <p>Coyle, C. L., M. Malek, C. Mayse, V. Patil, and S. Shell. <a href="http://support.sas.com/resources/papers/proceedings17/SAS0545-2017.pdf">"Data Can Be Beautiful: Crafting a Compelling Story with SAS Visual Analytics."</a> Proceedings of the SAS Global Forum 2017 Conference. Cary, NC: SAS Institute Inc.</p>
+                    </li>
+                    <li id="fn4">
+                        <p>Delaney, D, <a href="http://danieldelaney.net/there-is-definitely-a-grid">"There is Definitely a Grid," </a> danieldelaney.net, 2016.</p>
+                    </li> 
+                    <li id="fn5">
+                        <p>Few, S. Information Dashboard Design: Displaying data for at-a-glance monitoring. 2nd ed. Burlingame, CA: Analytics Press, 2013.</p>
+                    </li> 
+                    <li id="fn6">
+                        <p>Hagen, R., and K. Golombisky. White space is not your enemy: a beginner’s guide to communicating visually through graphic, web & multimedia design. 2nd ed. Boca Raton, FL: CRC Press, 2013.</p>
+                    </li>  
+                    <li id="fn7">
+                        <p>Lima, M. <a href="https://medium.com/about-codecademy/horror-vacui-1af263f068bb">Horror Vacui and the battle for white space.</a></p>
+                    </li>
+                    <li id="fn8">
+                        <p>Marcantonio, B. <a href="https://manifesto.co.uk/design-principles-gestalt-white-space-perception/">Design principles - Gestalt, white space and perception.</a></p>
+                    </li>
+                    <li id="fn9">
+                        <p>Orlov, P., T. Ermolova, V. Laptev, A. Mitrofanov, and V. Ivanov. <a href="https://www.researchgate.net/publication/301822593_The_Eye-tracking_Study_of_the_Line_Charts_in_Dashboards_Design">"The Eye-tracking Study of the Line Charts in Dashboards Design."</a> February 2016. Proceedings of the 11th Joint Conference on Computer Vision, Imaging and Computer Graphics Theory and Applications. Volume 2. VISIGRAPP 2016.</p>
+                    </li>
+                    <li id="fn10">
+                        <p>Samara, T. Making and Breaking the Grid: A Graphic Design Layout Workshop. Beverly, MA: Rockport Publishers, 2005.</p>
+                    </li>
+                    <li id="fn11">
+                        <p>Terror, D. <a href="https://www.smashingmagazine.com/2009/07/lessons-from-swiss-style-graphic-design/">"Lessons from Swiss Style Graphic Design."</a> Smashing Magazine. July 17, 2009.</p>
+                    </li>
+                    <li id="fn12">
+                        <p>The Paper Mill Store. <a href="http://blog.thepapermillstore.com/design-principles-white-space/">Design Principles: White Space (blog). </a></p>
+                    </li>
+                    <li id="fn13">
+                        <p>Turnbull, C. <a href="https://webdesign.tutsplus.com/articles/using-white-space-or-negative-space-in-your-designs--webdesign-3401">"Using White Space (or Negative Space) in Your Designs."</a> Envatotuts+.</p>
+                    </li>
+                    <li id="fn14">
+                        <p>Williams, R. The Non-Designer's Design Book. 4th ed. Berkeley, CA: Peachpit Press, 2015.</p>
+                    </li>
+                </ol>
+            </section>
+            <div class="snackbar">
+                <p>We’re still growing our site.<a href="mailto:Rajiv.Ramarajan@sas.com?Subject=Beautiful Reports Feedback&cc=mark.malek@sas.com;cheryl.coyle@sas.com"> Tell us what you think!</a></p>
+            </div>
+        </footer>
+
+        <script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="site-js.js" type="text/javascript" charset="utf-8">
+        </script>
+
+    </body>
+    
+</html>

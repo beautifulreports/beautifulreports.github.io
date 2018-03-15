@@ -1,0 +1,195 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Beautiful Reports</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en" />
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+        <meta name="product" content="'SAS Visual Analytics'" />
+        <meta name="description" content="Focus Area for Report Design Best Practices that provide our users with technical information." />
+        <meta name="keywords" content="Report Design Best Practices, documentation, examples" />
+        <meta name="owner" content="R&D" />
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" a href="reports.css"/>
+        <link rel="stylesheet" type="text/css" a href="responsive.css"/>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Raleway:200,400,600" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <nav id="sidenav">
+                <a class="close-icon" onclick="closeNav()">&times;</a>
+
+                    <a id="home" href="index.html">Beautiful Reports</a>
+
+                    <button class="accordion">preparation</button>
+                        <div class="submenu">
+                            <ul>
+                            <li><a>your audience</a></li>
+                            <li><a>your message</a></li>
+                            <li><a>first draft</a></li>
+                            </ul>
+                        </div>  
+                
+                    <button class="accordion">data</button>
+                        <div class="submenu">
+                            <ul>
+                            <li><a>understanding your data</a></li>
+                            <li><a>refining your data</a></li>
+                            <li><a>choosing the right visual</a></li>
+                            <li><a>general considerations</a></li>
+                            </ul>
+                        </div>
+                
+                    <button class="accordion">tools</button>
+                        <div class="submenu">
+                            <ul>
+                            <li><a>display rules</a></li>
+                            <li><a href="filters.html">filters<b> NEW!</b></a></li>
+                            <li><a>interactions</a></li>
+                            <li><a>containers</a></li>
+                            <li><a>custom data items</a></li>
+                            <li><a>report &amp; page linking</a></li>
+                            </ul>
+                        </div>
+                    
+                    <button class="accordion">communication</button>
+                        <div class="expanded">
+                            <ul>
+                            <li><a href="report-level_text.html">report-level text<b> NEW!</b></a></li>
+                            <li class="selected"><a href="object-level_text.html">object-level text<b> NEW!</b></a></li>
+                            <li><a>label consistency</a></li>
+                            </ul>
+                        </div>
+                
+                    <button class="accordion">layout</button>
+                        <div class="submenu">
+                            <ul>
+                            <li><a>focal point</a></li>
+                            <li><a href="add_white_space.html">add whitespace<b> NEW!</b></a></li>
+                            <li><a>attention &amp; balance</a></li>
+                            <li><a>proximity &amp; alignment</a></li>
+                            <li><a>consistency</a></li>
+                            <li><a href="layout-simplification.html">simplify layout<b> NEW!</b></a></li>
+                            </ul>
+                        </div>
+                
+                    <button class="accordion">style</button>
+                        <div class="submenu">
+                            <ul>
+                            <li><a>enhancing your story with images</a></li>
+                            <li><a>drawing your audience in with color</a></li>
+                            <li><a>avoiding color disasters</a></li>
+                            <li><a>making your company look good</a></li>
+                            <li><a>realize its more than a font</a></li>
+                            <li><a>simplify style</a></li>
+                            </ul>
+                        </div>
+            </nav>
+            <button class="menu-icon" onclick="openNav()">&#9776;</button>
+        </header>
+
+        <div class="wrapper">
+            
+            <h1>Object-Level Text</h1>
+
+            <section>
+                <p>Reports can contain a lot of features that aren’t obvious at first glance, or at all. Don’t make your audience wonder how to use your report. Design your reports with tips and information that enable your audience to dig into the data without stumbling.</p>
+            </section>
+
+            <section class="column">
+                <h3>Quick Hints</h3>
+                <p>Adding hints to a page or report object can be a smart way to inform your audience. Page real estate is limited, especially when a report is destined for mobile devices, so brevity is important. However, a hint such as “Tap the bar chart to filter the table” is short and empowers your audience quickly.</p>
+                <img class="illustration" src="images/Object-Level_Text_1@3x.png" alt="Titles help your user understand the data">
+            </section>
+            
+            <section>	
+                <img src="images/Object-Level_Text_2@4x.png" alt="Needle Plot with an effective instructional title">
+                <div class="figcaption">The needle plot in this report has an effective instructional title</div>
+            </section>
+            
+            <div class="splitter"></div>
+            
+            <section>
+                <img class="illustration" src="images/Object-Level_Text_3@3x.png" alt="Labels are a powerful way to help your report user.">
+            </section>
+            
+            <section>
+                <h3>Labels are Powerful</h3>
+                <p>Don’t overlook labels. They are a powerful way to make reports easier to use.</p>
+            </section>
+            
+            <section class="column">
+                <img src="images/Object-Level_Text_4@4x.png" alt="Titles help your user understand the data">
+                <h3>Pages</h3> 
+                <p>Clearly title each page in the report and add a description for each page describing its data, types of reports objects, and any interactions between report objects.</p>
+            </section>
+            
+            <section class="column">
+                <img src="images/Object-Level_Text_5@4x.png" alt="Titles help your user understand the data">
+                <h3>Report objects</h3> 
+                <p>Clearly title and describe each report object. Make sure the description states the report object type (bubble chart, line chart, active web link, and so forth). Including this information is critical for any audience members that use screen reader technology.</p>
+            </section>
+            
+            <section class="column">
+                <img src="images/Object-Level_Text_6@4x.png" alt="Titles help your user understand the data">
+                <h3>Axes</h3> 
+                <p>Carefully weigh how to label each axis in every chart. Doing so makes the data easier to understand. It is also critical for screen reader technology.  However, axes labels in some charts can be unnecessary. In the Expenses by State chart above, for example, the title and data point labels are clear. Adding axes labels would not improve the chart, but add clutter.</p>
+            </section>
+            
+            <section class="column">
+                <img src="images/Object-Level_Text_7@4x.png" alt="Titles help your user understand the data">
+                <h3>Links</h3> 
+                <p>Make link names meaningful. The name should indicate where the link opens or the type of information the link connects to. For example, if a link opens a hidden page that describes how to filter report objects on that page, name the link “How to Filter Data on this Page.” Do not name it “Click here.” It doesn’t provide any useful information for your audience.</p>
+            </section>
+            
+        </div>
+        
+        <footer>
+            <div class="wrapper">
+
+                <h2>Learn More</h2>
+
+               <section>
+                   <p><strong>Want to dig deeper?</strong> The recommendations in this section are based on the following resources as well the experience of SAS consultants and employees.</p>
+                </section>
+
+                <ol>
+                    <li id="fn1">
+                        <p>Cerejo, Lyndon. "The Elements Of The Mobile User Experience." Smashing Magazine. July 11, 2012. Accessed December 16, 2015. <a href="http://www.smashingmagazine.com/2012/07/elements-mobile-user-experience">Available here</a></p>
+                    </li>
+
+                    <li id="fn2">
+                        <p>Ellison, Matthew. "Embedded user assistance: the future for software help?" Interactions 14, no. 1 (January 01, 2007): 30-31. Accessed August 1, 2017. <a href="http://interactions.acm.org/archive/view/january-february-2007/embedded-user-assistance1">Available here</a></p>
+                    </li>
+
+                    <li id="fn3">
+                        <p>Mandavilli, Lavanya. "Carry-On Suitcases and Mobile Devices: Using SAS® Visual Analytics Designer for Creating Optimally Designed Reports for SAS® Mobile BI.” In Proceedings of the SAS Global Forum 2016 Conference. Cary, NC: SAS Institute Inc. April 2016. <a href="http://support.sas.com/resources/papers/proceedings16">Available here</a></p>
+                    </li>
+
+                    <li id="fn4">
+                        <p>Mobley, Karen, Rich Hogan, and Pratik Phadke. “Designing SAS Visual Analytics Reports: Write Once, View Anywhere.” In Proceedings of the SAS Global Forum 2016 Conference. Cary, NC: SAS Institute Inc. April 2016. <a href=" http://support.sas.com/resources/papers/proceedings16">Available here</a></p>
+                    </li>
+
+                    <li id="fn5">
+                        <p>National Institute on Aging (NIA). "Making Your Website Senior Friendly." National Institute of Aging. March 2009. Accessed February 4, 2016. <a href="https://www.nia.nih.gov/sites/default/files/Sr_Web_tips_forweb_final_032509_0.pdf">Available here</a></p>
+                    </li>
+
+                    <li id="fn6">
+                        <p>Sookne, Jesse, Ed Summers, Julianna Langston, and Karen Mobley. "If You Build It, Will They Understand? Designing Reports for the General Public in SAS® Visual Analytics." In Proceedings of the SAS Global Forum 2016 Conference. Cary, NC: SAS Institute Inc. April 2016. <a href="http://support.sas.com/resources/papers/proceedings16/SAS6321-2016.pdf">Available here</a></p>
+                    </li>
+                </ol>
+            </div>
+            <div class="snackbar">
+                <p>We’re still growing our site.<a href="mailto:Rajiv.Ramarajan@sas.com?Subject=Beautiful Reports Feedback&cc=mark.malek@sas.com;cheryl.coyle@sas.com"> Tell us what you think!</a></p>
+            </div>
+        </footer>    
+
+        <script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="site-js.js" type="text/javascript" charset="utf-8">
+        </script>
+
+    </body>
+    
+</html>

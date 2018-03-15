@@ -1,0 +1,184 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Beautiful Reports</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en" />
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+        <meta name="product" content="'SAS Visual Analytics'" />
+        <meta name="description" content="Focus Area for Report Design Best Practices that provide our users with technical information." />
+        <meta name="keywords" content="Report Design Best Practices, documentation, examples" />
+        <meta name="owner" content="R&D" />
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" a href="reports.css"/>
+        <link rel="stylesheet" type="text/css" a href="responsive.css"/>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Raleway:200,400,600" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <nav id="sidenav">
+                <a class="close-icon" onclick="closeNav()">&times;</a>
+
+                    <a id="home" href="index.html">Beautiful Reports</a>
+
+                    <button class="accordion">preparation</button>
+                        <div class="submenu">
+                            <ul>
+                            <li><a>your audience</a></li>
+                            <li><a>your message</a></li>
+                            <li><a>first draft</a></li>
+                            </ul>
+                        </div>  
+                
+                    <button class="accordion">data</button>
+                        <div class="submenu">
+                            <ul>
+                            <li><a>understanding your data</a></li>
+                            <li><a>refining your data</a></li>
+                            <li><a>choosing the right visual</a></li>
+                            <li><a>general considerations</a></li>
+                            </ul>
+                        </div>
+                
+                    <button class="accordion">tools</button>
+                        <div class="expanded">
+                            <ul>
+                            <li><a>display rules</a></li>
+                            <li class="selected"><a href="filters.html">Focus the Audience with Filters<b> NEW!</b></a></li>
+                            <li><a>interactions</a></li>
+                            <li><a>containers</a></li>
+                            <li><a>custom data items</a></li>
+                            <li><a>report &amp; page linking</a></li>
+                            </ul>
+                        </div>
+                    
+                    <button class="accordion">communication</button>
+                        <div class="submenu">
+                            <ul>
+                            <li><a href="report-level_text.html">report-level text<b> NEW!</b></a></li>
+                            <li><a href="object-level_text.html">object-level text<b> NEW!</b></a></li>
+                            <li><a>label consistency</a></li>
+                            </ul>
+                        </div>
+                
+                    <button class="accordion">layout</button>
+                        <div class="submenu">
+                            <ul>
+                            <li><a>focal point</a></li>
+                            <li><a href="add_white_space.html">add whitespace<b> NEW!</b></a></li>
+                            <li><a>attention &amp; balance</a></li>
+                            <li><a>proximity &amp; alignment</a></li>
+                            <li><a>consistency</a></li>
+                            <li><a href="layout-simplification.html">simplify layout<b> NEW!</b></a></li>
+                            </ul>
+                        </div>
+                
+                    <button class="accordion">style</button>
+                        <div class="submenu">
+                            <ul>
+                            <li><a>enhancing your story with images</a></li>
+                            <li><a>drawing your audience in with color</a></li>
+                            <li><a>avoiding color disasters</a></li>
+                            <li><a>making your company look good</a></li>
+                            <li><a>realize its more than a font</a></li>
+                            <li><a>simplify style</a></li>
+                            </ul>
+                        </div>
+            </nav>
+
+            <button class="menu-icon" onclick="openNav()">&#9776;</button>
+
+        </header>
+
+        <div class="wrapper">
+            
+            <h1>Focus Your Audience with Filters</h1>
+
+            <section>
+                <h2>Why Filter Your Data?</h2>
+                <ul>
+                    <li><b>Ease the cognitive load:</b> filtering the data presented in visualizations can make the information more focused, and easier to read and understand.</li>
+                    <li><b>Improve performance:</b> decreasing the amount of data used in a report enables reports to load and respond more quickly. Performance is especially key for users on mobile devices.</li>
+                    <li><b>Add interactivity:</b> prompts and object interactions enable your users to explore the data in a more interactive way. </li>
+                    <li><b>Eliminate extreme data points:</b> filtering can be used to remove outliers—data points that are outside of a normal or reasonable range and can skew the analysis or presentation of data. Carefully consider the data that is filtered and whether the omission should be disclosed.</li>
+                </ul>
+                <img class="illustration" src="images/Filters_1@3x.png">
+            </section>
+
+            <section>
+                <h3>Using Preset Filters</h3>
+                <p>Preset filters are useful when you want to subset the data for a specific audience, or hide data that should not be shared. Preset filters can also improve the performance of your reports. You define preset filters during report creation and they cannot be modified by your audience. In SAS Visual Analytics, these filters include data source filters and the filters and rankings that you create on the <b>Filters</b> and <b>Ranks</b> panes.</p>
+                <img src="images/Filters_2@3x.png" alt="On this page, the preset filters subset the data for the line chart. These filters can be modified only in the report designer interface."><div class="figcaption">On this page, the preset filters subset the data for the line chart. These filters can be modified only in the report designer interface.</div>
+            </section>
+            
+            <section>
+                <h3>Using Interactive Filters</h3>
+                <p>Interactive filters enable your audience to explore the data and to tailor the report data to their own interests. Interactive filters can be set or modified by your audience. These filters include prompts and object interactions such as filtering and linked selection. When you include filters in your report, it is important to carefully consider the number, placement, and actions of the filters.  Use instructive titles on the prompts or interactive objects to explain the existence of the filters, how to use them, and which elements of the report are affected.</p>
+                <img src="images/Filters_3@3x.png" alt="An example of a slider control which has an effective instructional title. The user’s selection filters the line chart below the control."><div class="figcaption">An example of a slider control which has an effective instructional title. The user’s selection filters the line chart below the control.</div>
+            </section>
+            
+            <section>
+                <h3>Prompt Controls</h3>
+                <p>When you use prompts, don’t overload the prompt area with too many filters. If you have many prompts or the report is intended for users on mobile devices, consider placing the prompts inside a prompt container.</p>
+                <div class="column">
+                    <img src="images/Filters_4@3x.png" alt="The prompt area for this page clutters the screen and requires a scrollbar."><div class="figcaption">The prompt area for this page clutters the screen and requires a scrollbar.</div>
+                    <img src="images/Filters_5@3x.png" alt="A prompt container eliminates the clutter and offers easy access to the controls."><div class="figcaption">A prompt container eliminates the clutter and offers easy access to the controls.</div>
+                </div>
+            </section>
+            
+            <section>
+                <h3>Object Interactions</h3>
+                <p>When you create an object that has filter interactions, place it at the top of the page and to the left of the objects that it affects (or to the right in cultures that read right-to-left). Linked selection interactions highlight the relationships between the data in related visuals.</p>
+                <img src="images/Filters_6@3x.png" alt="On this page, the geo map at the left is the source of a linked selection interaction."><div class="figcaption">On this page, the geo map at the left is the source of a linked selection interaction.</div>
+            </section>
+        </div>
+        
+        <footer>
+            <div class="wrapper">
+
+                <h2>Learn More</h2>
+
+               <section>
+                   <p><strong>Want to dig deeper?</strong> The recommendations in this section are based on the following resources as well the experience of SAS consultants and employees.</p>
+                </section>
+
+                <ol>
+                    <li id="fn1">
+                        <p>Few, Stephen. “Information Dashboard Design: Displaying Data for At-a-Glance Monitoring 2nd Edition” 2013.<a href="https://www.amazon.com/Information-Dashboard-Design-At-Glance/dp/1938377001">Available here</a></p>
+                    </li>
+
+                    <li id="fn2">
+                        <p>Helbig, Tuesdi. “It All Started with a Mouse: Storytelling with SAS® Visual Analytics.” In Proceedings of SGF 2017. <a href="http://support.sas.com/resources/papers/proceedings17/0779-2017.pdf">Available here</a></p>
+                    </li>
+
+                    <li id="fn3">
+                        <p>Rivers, Kerri L.  “Designing for Performance – Best Practices for SAS® Visual Analytics Reports.” In Proceedings of SGF 2017. <a href="http://support.sas.com/resources/papers/proceedings17/SAS0734-2017.pdf">Available here</a></p>
+                    </li>
+
+                    <li id="fn4">
+                        <p>Sookne, Jesse, Ed Summers, Julianna Langston, and Karen Mobley.  “If You Build It, Will They Understand? Designing Reports for the General Public in SAS Visual Analytics.” In Proceedings of SGF 2016. <a href=" http://support.sas.com/resources/papers/proceedings16/SAS6321-2016.pdf">Available here</a></p>
+                    </li>
+
+                    <li id="fn5">
+                        <p>Tufte, Edward R. The Visual Display of Quantitative Information, 2nd edition, 2001. <a href="https://www.amazon.com/Visual-Display-Quantitative-Information/dp/0961392142/ref=pd_lpo_sbs_14_t_1/137-8639531-9679665?_encoding=UTF8&psc=1&refRID=9QG89V907BPNQDA47QZ5">Available here</a></p>
+                    </li>
+
+                    <li id="fn6">
+                        <p>Yau, Nathan. Visualize This: The FlowingData Guide to Design, Visualization, and Statistics, 2011. <a href="https://www.amazon.com/Visualize-This-FlowingData-Visualization-Statistics/dp/0470944889">Available here</a></p>
+                    </li>
+                </ol>
+            </div>
+            <div class="snackbar">
+                <p>We’re still growing our site.<a href="mailto:Rajiv.Ramarajan@sas.com?Subject=Beautiful Reports Feedback&cc=mark.malek@sas.com;cheryl.coyle@sas.com"> Tell us what you think!</a></p>
+            </div>
+        </footer>    
+
+        <script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="site-js.js" type="text/javascript" charset="utf-8">
+        </script>
+
+    </body>
+    
+</html>
