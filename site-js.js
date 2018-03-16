@@ -34,7 +34,7 @@ document.getElementById("sidenav").style.left = "0";
 }
 //close nav on click
 function closeNav() {
-document.getElementById("sidenav").style.left = "-15rem";
+document.getElementById("sidenav").style.left = "-20rem";
 }
 
 var acc = document.getElementsByClassName("accordion");
