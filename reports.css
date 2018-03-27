@@ -11,7 +11,7 @@ h1 {
 }
 
 .home h1, .home .menu{
-    color:white;
+    color: white;
 }
 
 .white{
@@ -53,7 +53,7 @@ p + img{
     margin-top: 1rem;
 }
 
-.figcaption{
+h4{
     color:#686868;
     font-size:.75rem;
     line-height:1.25rem;
@@ -72,7 +72,7 @@ li{
 
 a{
     color:#86134f;
-    font-weight:600;
+    font-weight:400;
     text-decoration:none;
 }
 
@@ -151,12 +151,13 @@ nav{
     line-height: inherit;
 }
 
-button.accordion, button.philosophy{
+button.accordion{
     padding: 0;
     cursor: pointer;
-    text-transform: capitalize;
-    color:#000;
-    font-size:.75rem;
+    text-transform: uppercase;
+    color:#757575;
+    font-weight: 600;
+    font-size:.5rem;
     line-height:2.25rem;
     letter-spacing: .05rem;
     background: #fff;
@@ -166,18 +167,11 @@ button.accordion, button.philosophy{
     text-align: left;
 }
 
-button.accordion:hover, button.expanded:hover,
+button.expanded:hover,
 button.philosophy:hover{
     color:#86134f;
 }
 
-.submenu{
-    display: none;
-}
-
-.expanded{
-    display: inline;
-}
 
 .submenu a, .expanded a{
     text-transform: capitalize;
@@ -193,12 +187,9 @@ button.philosophy:hover{
     cursor: pointer;
 }
 
-.selected a{
-    color: #86134f;
-    border-left: .25rem solid #86134f;
-    margin-left: -2rem;
-    padding-left: 2.5rem;
-    
+.selected{
+    color: #86134f !important; 
+    font-weight: 700;
 }
 
 #home{
