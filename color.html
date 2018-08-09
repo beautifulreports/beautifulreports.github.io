@@ -1,0 +1,189 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Beautiful Reports</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en" />
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+        <meta name="product" content="'SAS Visual Analytics'" />
+        <meta name="description" content="Focus Area for Report Design Best Practices that provide our users with technical information." />
+        <meta name="keywords" content="Report Design Best Practices, documentation, examples" />
+        <meta name="owner" content="R&D" />
+        <link rel="stylesheet"type="text/css" a href="reports.css"/>
+        <link rel="stylesheet" type="text/css" a href="responsive.css"/>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Raleway:200,400,600" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Ovo" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+           <nav id="sidenav">
+            <a class="close-icon" onclick="closeNav()">&times;</a>
+            <a id="home" href="index.html" class="page">Beautiful Reports</a>
+            <span id="test"></span>
+            </nav>
+            <button class="menu-icon" onclick="openNav()">&#9776;</button>
+        </header>
+        
+        <div class="wrapper">
+
+            <h1>Drawing Your Audience in with Color</h1>
+            
+            <section>
+                <h3>Why Use Color with Care?</h3>
+                <ul>
+                    <li>Improve understanding: color affects how we interpret information. When you use color effectively, your audience can understand your data story quickly and with confidence.</li>
+                    <li>Clarify your data story: color can establish meaning and hierarchy in a report or dashboard. Basic knowledge of the color wheel can help you to skillfully apply color.</li>
+                    <li>Create a successful visual style: color can enhance the overall visual style of a report or dashboard. By understanding the relationships between colors, you can create a persuasive visual style that advances your data story.</li>
+                </ul>
+            </section>
+        
+            <section>
+                <h3>Understand How the Report Be Viewed</h3>
+                <p>Will your report be viewed on a computer, on a printed page, or projected onto a screen? Each location changes how color is produced.</p>
+                    <section class="column">
+                        <img class="illustration"src="images/Color_3@3x.png" alt="Caption">
+                        <p><b>Computer screens</b> produce richer and brighter colors because the computer screen adds light behind the color.</p>
+                    </section>
+                    <section class="column">
+                        <p>A <b>printed report</b> (especially black, white, and grayscale print) requires using more unsaturated color and not using a background color. This makes it easier and more cost effective to print.</p>
+                        <p class="figcaption"><b>TIP:</b> If you know your report will be printed, perform color runs (also called test prints) on your report to ensure the saturation and contrast is sufficient and produces a nice looking result.</p>
+                        <img class="illustration" src="images/Color_4@3x.png" alt ="Caption">
+                    </section>
+                    <section class="column">
+                        <img class="illustration" src="images/Color_5@3x.png" alt="Caption">
+                        <p>A <b>projected report</b> requires colors with strong contrast to the background, so that the color richness comes through most effectively when projected on a white screen.</p>
+                    </section>
+            </section>
+            
+            <section>
+                <h3>Resist the Overuse of Color</h3>
+                <p>Adding color for the sake of adding color results in visual clutter. Instead, focus your audiences’ eye by using only a few colors. This is a key strategy in the world of design. Less is more. When in doubt, save color for data visualization only. If you must use color outside of your visualization, make sure to use a color already in your color palette.</p>
+                <img src="images/Color_6@3x.png" alt="This report uses the same blue color from the visualization in the title"><h4>This report uses the same blue color from the visualization in the title.</h4>
+            </section>
+            
+            <section>
+                <h2>To avoid overusing colors, ask yourself the following questions:</h2>
+                <ul>
+                    <li>Does the report use more than 5 colors?</li>
+                    <li>Does the report use a high percentage of only one color from my palette?</li>
+                    <li>Is there color in every available space?</li>
+                    <li>Am I using an image for the background or foreground? Images can contain a vast amount of color which can distract your audience from your core message.</li>
+                </ul>
+            </section>
+            
+            <h1>Reduce Visual Distraction with Harmonious Colors</h1>
+            
+            <section>
+                <h3>Color Relationship</h3>
+                <p>Colors that lie opposite of each other on the color wheel (for example, blue and orange) are known as <b>complementary colors</b>. When used together, side by side, or on the same page, complementary colors are considered pleasing to the eye. Using blue and orange within a graph visualization is a good idea because these colors are quickly distinguishable from each other. Keep in mind however that using these colors on top of each other (for example, red foreground and green background) causes color vibration. <b>Color vibration</b> refers to the unpleasant visual appearance caused when placing certain colors on top of each other. If your report has a colored background, use black or white text as the foreground. Doing so helps to avoid color vibration, which is considered harmful to the eyes and causes a loss of detail in the foreground’s shape.</p>
+                <section class="column">
+                    <img src="images/Color_7@3x.png" alt="Caption"><h4>Caption</h4>
+                    <img src="images/Color_8@3x.png" alt="Caption"><h4>Caption</h4>
+                </section>
+                <p>Colors adjacent to one another on the color wheel are called <b>analogous colors</b>. Using analogous colors within the same visualization makes it difficult to perceive the block of color, especially for those with color blindness. Eight percent of men have the most basic form of color blindness and have difficulty distinguishing colors with a red and green hue.</p>
+                <section class="column">
+                    <img src="images/Color_9@3x.png" alt="Caption"><h4>Caption</h4>
+                    <img src="images/Color_10@3x.png" alt="Caption"><h4>Caption</h4>
+                </section>
+            </section>
+            
+            <section>
+                <p>Graph palettes shipped with SAS Visual Analytics are optimized to enhance readability for as many users as possible. The graph palette cycles through warm and cool colors, while avoiding hues which might trigger inappropriate combinations or meanings.</p>
+            </section>
+            
+            <secton>
+                <h3>Color Contrast</h3>
+                <p>To ensure readability, choose background colors with sufficient contrast to your foreground elements.</p>
+                <p>Examples of poor contrast include:</p>
+                <ul>
+                    <li>Grey text on a black background</li>
+                    <li>Red bars on a black background</li>
+                    <li>Pictures as backgrounds</li>
+                </ul>
+                <p>Depending on the context, white on a black background can have poor contrast. Black can start to “close in” on white shapes such as text. Thin, finely drawn white text on a black background can start to disappear, or get lost, when it is printed. However, you can view the same text on a computer because modern computer monitors have a higher pixel density and can create sharper results.</p>
+                <section class="column">
+                    <img src="images/Color_11@3x.png" alt="Caption"><h4>Caption</h4>
+                    <img src="images/Color_11@3x.png" alt="Caption"><h4>Caption</h4>
+                </section>
+            </secton>
+            
+            <section>
+                <h3>Color Amount</h3>
+                <p>Color harmony is also effected by the amount of color that you use. You do not want your audience distracted from your data story by large areas of color.</p>
+                <p><b>Aread charts</b>, such as pie charts or geographical maps, contain a lot of color. <b>Axis charts</b>, such as line charts or scatter plots, contain a small amount of color. Use a mix of these two groups of charts, as well as carefully adjusted color, to balance the page:</p>
+            </section>
+            
+            
+        </div>        
+
+            
+
+        <footer>
+            <section class="wrapper">
+                
+                <h2>Learn More</h2>
+
+                <section>
+                   <p><strong>Want to dig deeper?</strong> The recommendations in this section are based on the following resources as well the experience of SAS consultants and employees.</p>
+                </section>
+
+                <ol>
+                    <li id="fn1">
+                        <p>Bera, P. "Do Distracting Dashboards Matter? Evidence from an Eye Tracking Study" (lecture, 7th SIGSAND/PLAIS EuroSymposium, Gdańsk, Poland, September 25, 2014.</p>
+                    </li>	
+                    <li id="fn2">
+                        <p>Bremser, W. G., and W. P. Wagner. "Developing Dashboards for Performance Management." The CPA Journal 83, no 7 (July 2013).</p>
+                    </li>
+                    <li id="fn3">
+                        <p>Coyle, C. L., M. Malek, C. Mayse, V. Patil, and S. Shell. <a href="http://support.sas.com/resources/papers/proceedings17/SAS0545-2017.pdf">"Data Can Be Beautiful: Crafting a Compelling Story with SAS Visual Analytics."</a> Proceedings of the SAS Global Forum 2017 Conference. Cary, NC: SAS Institute Inc.</p>
+                    </li>
+                    <li id="fn4">
+                        <p>Delaney, D, <a href="http://danieldelaney.net/there-is-definitely-a-grid">"There is Definitely a Grid," </a> danieldelaney.net, 2016.</p>
+                    </li> 
+                    <li id="fn5">
+                        <p>Few, S. Information Dashboard Design: Displaying data for at-a-glance monitoring. 2nd ed. Burlingame, CA: Analytics Press, 2013.</p>
+                    </li> 
+                    <li id="fn6">
+                        <p>Hagen, R., and K. Golombisky. White space is not your enemy: a beginner’s guide to communicating visually through graphic, web & multimedia design. 2nd ed. Boca Raton, FL: CRC Press, 2013.</p>
+                    </li>  
+                    <li id="fn7">
+                        <p>Lima, M. <a href="https://medium.com/about-codecademy/horror-vacui-1af263f068bb">Horror Vacui and the battle for white space.</a></p>
+                    </li>
+                    <li id="fn8">
+                        <p>Marcantonio, B. <a href="https://manifesto.co.uk/design-principles-gestalt-white-space-perception/">Design principles - Gestalt, white space and perception.</a></p>
+                    </li>
+                    <li id="fn9">
+                        <p>Orlov, P., T. Ermolova, V. Laptev, A. Mitrofanov, and V. Ivanov. <a href="https://www.researchgate.net/publication/301822593_The_Eye-tracking_Study_of_the_Line_Charts_in_Dashboards_Design">"The Eye-tracking Study of the Line Charts in Dashboards Design."</a> February 2016. Proceedings of the 11th Joint Conference on Computer Vision, Imaging and Computer Graphics Theory and Applications. Volume 2. VISIGRAPP 2016.</p>
+                    </li>
+                    <li id="fn10">
+                        <p>Samara, T. Making and Breaking the Grid: A Graphic Design Layout Workshop. Beverly, MA: Rockport Publishers, 2005.</p>
+                    </li>
+                    <li id="fn11">
+                        <p>Terror, D. <a href="https://www.smashingmagazine.com/2009/07/lessons-from-swiss-style-graphic-design/">"Lessons from Swiss Style Graphic Design."</a> Smashing Magazine. July 17, 2009.</p>
+                    </li>
+                    <li id="fn12">
+                        <p>The Paper Mill Store. <a href="http://blog.thepapermillstore.com/design-principles-white-space/">Design Principles: White Space (blog). </a></p>
+                    </li>
+                    <li id="fn13">
+                        <p>Turnbull, C. <a href="https://webdesign.tutsplus.com/articles/using-white-space-or-negative-space-in-your-designs--webdesign-3401">"Using White Space (or Negative Space) in Your Designs."</a> Envatotuts+.</p>
+                    </li>
+                    <li id="fn14">
+                        <p>Williams, R. The Non-Designer's Design Book. 4th ed. Berkeley, CA: Peachpit Press, 2015.</p>
+                    </li>
+                </ol>
+            </section>
+            <div class="snackbar">
+                <p>We’re still growing our site.<a href="mailto:Rajiv.Ramarajan@sas.com?Subject=Beautiful Reports Feedback&cc=mark.malek@sas.com;cheryl.coyle@sas.com"> Tell us what you think!</a></p>
+            </div>
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="site-js.js" type="text/javascript" charset="utf-8">
+        </script>
+
+    </body>
+    
+</html>

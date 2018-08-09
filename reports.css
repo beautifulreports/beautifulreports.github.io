@@ -3,9 +3,10 @@
 
 
 h1 {
-    font-family:'Raleway',sans-serif;
+    font-family: 'Ovo', serif;
+    color: #000;
+    font-weight: 400;
     font-size:4rem;
-    font-weight:600;
     line-height:4.75rem;
     padding-bottom:3rem;      
 }
@@ -15,15 +16,17 @@ h1 {
 }
 
 .white{
-    font-family:'Raleway',sans-serif;
+    font-family: 'Ovo', serif;
     color:#fff;
-    font-weight: 600;
     padding-bottom: 0;
+    font-weight:400;
 }
 
 
 h2{
-    font-family: 'Raleway',sans-serif;
+    font-family: 'Ovo', serif;
+    color: #000;
+    font-weight: 400;
     font-size:2.5rem;
     line-height:3.25rem;
     margin: 0;
@@ -31,9 +34,9 @@ h2{
 }
 
 h3{
-    font-family:'Raleway',sans-serif;
+    font-family: 'Ovo',serif;
     font-size:1.125rem;
-    font-weight:600;
+    color:#000;
     padding-bottom:1rem;
     line-height: 2rem;
     margin:0;
@@ -54,7 +57,7 @@ p + img{
 }
 
 h4{
-    color:#686868;
+    color:#f8f9fa;
     font-size:.75rem;
     line-height:1.25rem;
     margin-top:0rem;
@@ -72,7 +75,6 @@ li{
 
 a{
     color:#86134f;
-    font-weight:400;
     text-decoration:none;
 }
 
@@ -88,6 +90,10 @@ ol li{
     list-style-position: outside;
     padding-left:.5rem;
     margin-left:1rem;
+}
+
+ol ul{
+    margin: .5rem 0 .5rem 3rem;
 }
 
 
@@ -155,8 +161,7 @@ button.accordion{
     padding: 0;
     cursor: pointer;
     text-transform: uppercase;
-    color:#757575;
-    font-weight: 600;
+    color:#768396;
     font-size:.5rem;
     line-height:2.25rem;
     letter-spacing: .05rem;
@@ -194,8 +199,7 @@ button.philosophy:hover{
 
 #home{
     color:#86134f;
-    font-family: Raleway;
-    font-weight:600;
+    font-family: 'Ovo',serif;
     font-size:1.25rem;
     background: #fff;
     cursor: pointer;
@@ -210,9 +214,9 @@ button.philosophy:hover{
 
 body{
     margin:0;
-    background:#f4f4f4;
-    font-family:'Open Sans',sans-serif;
-    color:#000;
+    background:#f8f9fa;
+    font-family: 'Karla', sans-serif;
+    color:#768396;
     font-size:1rem;
     font-weight:300;
 }
@@ -259,7 +263,7 @@ body{
 }
 
 section{
-    padding: 3rem 0;
+    padding: 2rem 0;
 }
 
 .splitter{
