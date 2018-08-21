@@ -26,7 +26,7 @@ document.getElementById('test').innerHTML = (
                     '<button class="accordion">layout</button>' +
                         '<div class="submenu">' +
                             '<ul>' +
-                            '<li><a id="add_whitespace" href="add_white_space.html" class="page">add whitespace</a></li>' +
+                            '<li><a id="add_whitespace" href="add_white_space.html" class="page">embrace whitespace</a></li>' +
                             '<li><a id="layout_simplification" href="layout-simplification.html" class="page">layout simplification</a></li>' +
                             '</ul>' +
                         '</div>' +      

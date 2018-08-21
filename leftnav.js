@@ -1,4 +1,4 @@
-﻿ <header>
+ <header>
             <nav id="sidenav">
                 <a class="close-icon" onclick="closeNav()">&times;</a>
 
@@ -22,7 +22,7 @@
                     <button class="accordion">layout</button>
                         <div class="submenu">
                             <ul>
-                            <li><a href="add_white_space.html">add whitespace</a></li>
+                            <li><a href="add_white_space.html">embrace whitespace</a></li>
                             <li><a href="layout-simplification.html">layout simplification</a></li>
                             </ul>
                         </div>
